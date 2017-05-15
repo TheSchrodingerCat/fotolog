@@ -32,4 +32,16 @@ function agregaPosteo() {
 	nuevoPost.appendChild(parrafCorazon);
 	nuevoPost.appendChild(separacion);
 
+	//función click del corazón
+	i.addEventListener("click",function(){
+		i.classList.toggle('rojo');
+	})
+
+	nuevoPost.setAttribute("class","posteo");
+	containerPosteos.appendChild(nuevoPost);
+
+	//resetea y deja en blanco
+	document.getElementById("nombre").value = "";
+	document.getElementById("cajaposteos").value = "";
+
 }
